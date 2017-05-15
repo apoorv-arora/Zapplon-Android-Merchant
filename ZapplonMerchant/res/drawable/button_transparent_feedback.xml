@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <solid android:color="@color/white_trans_ten" />
+        </shape></item> <!-- pressed -->
+    <item><shape android:shape="rectangle">
+            <solid android:color="@color/transparent1" />
+        </shape></item> <!-- default/unchecked -->
+
+</selector>

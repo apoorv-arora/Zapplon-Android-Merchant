@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_fragment_scroll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zhl_dark"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Name input -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/search_map_container"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height125"
+                android:layout_alignParentTop="true"
+                android:foreground="@drawable/photo_feedback" >
+
+                <ImageView
+                    android:id="@+id/search_map"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/vacancy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/search_map_container"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/toggle"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16"
+                android:visibility="gone" />
+
+            <Switch
+                android:id="@+id/toggle_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/search_map_container"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:checked="true"
+                android:gravity="right|center_vertical"
+                android:padding="@dimen/size10"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:background="@drawable/zhl_dark_feedback"
+            android:gravity="right|center_vertical"
+            android:padding="@dimen/size10"
+            android:text="@string/edit_store_details"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16"
+            android:visibility="gone" />
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/contact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16" />
+    </LinearLayout>
+
+</ScrollView>

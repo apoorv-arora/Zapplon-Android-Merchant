@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Zapplon</string>
+    <string name="app_id">1640657659526412</string>
+    <string name="action_settings">Settings</string>
+    <string name="pre_signup">Pre-signup</string>
+    <string name="pre_signup_description">Get this before we start doing, quick!</string>
+    <string name="could_not_connect">Could not connect to server</string>
+    <string name="signingup_wait">Verifying credentails! Please wait..</string>
+    <string name="connect_via_facebook">Connect via Facebook</string>
+    <string name="verifying_creds">Verifying credentials..</string>
+    <string name="logout">Sign out</string>
+    <string name="logout_confirm">Are you sure?</string>
+    <!-- Dialog strings -->
+    <string name="dialog_call">Call</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!-- Fragment titles -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="feed">Feed</string>
+    <string name="me">Me</string>
+    <string name="active_deals">Deals</string>
+    <string name="dynamic">Crowd</string>
+    <string name="archived_deals">Archived Deals</string>
+    <string name="store_settings">Settings</string>
+
+    <!-- Store types -->
+    <string name="salon">Salons</string>
+    <string name="spa">Spa</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="store">Store</string>
+
+    <!-- Error messages -->
+    <string name="no_internet_message">Seems like you are not connected to the internet. Please try again later.</string>
+    <string name="error_try_again">Something went wrong. \n Please try again later.</string>
+    <string name="err_occurred">An error occurred. Please try again.</string>
+    <string name="success">Success</string>
+    <string name="success_message_redeem_coupon">Please check your inbox for the coupon details.</string>
+
+    <!-- Drawer strings -->
+    <string name="invite_friends">Invite</string>
+    <string name="rate_app">Rate us on Playstore</string>
+    <string name="feedback">Feedback</string>
+    <string name="about_us">About</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="verify_deal">Verify Deal</string>
+
+    <!-- Feedback -->
+    <string name="feedback_hint">Write something...</string>
+    <string name="feedback_email">If you have something to say that doesn\'t fit here, please shoot us an email at apoorv@zapplon.com</string>
+    <string name="feedback_email_subject">Zapplon Android App Feedback</string>
+    <string name="send_mail">Send Mail</string>
+    <string name="no_email_clients">There are no email clients installed.</string>
+
+    <!-- Share -->
+    <string name="toast_share_longpress">Share</string>
+    <string name="share_description">I am inviting you to try this crazy application that let\'s you borrow things for free.</string>
+
+    <!-- About us -->
+    <string name="about_version">v1.91</string>
+    <string name="about_text">ZAPPLON is a reservation platform that reintroduces the element of spontaneity to outdoor experience, by allowing anyone to make Last min reservations at popular restaurants, Salons, SPAs.</string>
+    <string name="about_us_terms_of_use">Terms of Service</string>
+    <string name="about_us_privacypolicy">Privacy Policy</string>
+
+    <!-- Redeem -->
+    <string name="redeem">Redeem</string>
+    <string name="redeem_request">Fetching the deal, please wait..</string>
+
+    <!-- FAB -->
+    <string name="add_promo">Add promo</string>
+    <string name="cannot_add_deal">Deal could not be added at this time.</string>
+
+    <!-- Create promo -->
+    <string name="details">Discount percentage</string>
+    <string name="discount_food">Discount percentage on Food</string>
+    <string name="discount_drinks">Discount percentage on Drinks</string>
+    <string name="coupons_count">Number of coupons</string>
+    <string name="coupons_count_hint">Enter the number of coupons</string>
+    <string name="details_hint">Enter discount percentage</string>
+    <string name="time_range">Time range</string>
+    <string name="time_hint">Specify time range</string>
+    <string name="title">Title</string>
+    <string name="title_hint">Specify title</string>
+    <string name="deal_type">Deal type</string>
+    <string name="deal_type_hint">Specify deal type</string>
+    <string name="submit">Submit</string>
+    <string name="enter_details">Enter details</string>
+    <string name="request_upload_content">Uploading your deal. Please wait...</string>
+    <string name="request_upload_success">Success!!\nDeal uploaded</string>
+    <string name="flat_discount">Percentage</string>
+    <string name="amount_discount">Amount</string>
+    <string name="deal_1">Deal 1</string>
+    <string name="deal_2">Deal 2</string>
+    <string name="deal_3">Deal 3</string>
+    <string name="deal_4">Deal 4</string>
+    <string name="discount_percentage">Discount percentage</string>
+    <string name="discount_percentage_hint">Enter discount percentage</string>
+    <string name="product">Product</string>
+    <string name="product_hint">Enter product details</string>
+    <string name="discount_amount_hint">Enter discount amount</string>
+    <string name="discount_amount">Discount amount</string>
+    <string name="min_order">Minimum order</string>
+    <string name="min_order_amount">Enter minimum order amount</string>
+    <string name="max_order">Maximum discount(optional)</string>
+    <string name="max_order_amount">Enter maximum discount</string>
+    <string name="end_time">End time</string>
+    <string name="pick_a_time">Pick a time</string>
+
+    <!-- Login screen -->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="login_terms">By logging in you agree to Zapplon\'s Terms of Service and Privacy Policy.</string>
+    <string name="content_policies">Content Policies</string>
+    <string name="forgot_password_header">Forgot password?</string>
+
+    <!-- Store details -->
+    <string name="name">Name</string>
+    <string name="type">Type</string>
+    <string name="address">Address</string>
+    <string name="contact">Contact</string>
+    <string name="name_hint">Enter store name</string>
+    <string name="type_hint">Enter store type</string>
+    <string name="address_hint">Enter address</string>
+    <string name="contact_hint">Enter contact</string>
+    <string name="add_store">Add store details</string>
+    <string name="edit_location">Edit store location</string>
+    <string name="location">Location</string>
+    <string name="add_location">Add Location</string>
+    <string name="location_identified">Location identified</string>
+    <string name="mark_location">Mark Location</string>
+    <string name="request_upload_content_store">Uploading your store. Please wait...</string>
+    <string name="select_store_type">Select store type</string>
+    <string name="select_deal_type">Select deal type</string>
+    <string name="salon_spa_category">Salon\\Spa</string>
+    <string name="food_drinks_category">Food &amp; Drinks</string>
+
+    <!-- Fragment store details -->
+    <string name="toggle">Toggle Vacancy</string>
+    <string name="edit_store_details">Edit store details</string>
+
+    <!-- Location update -->
+    <string name="update_location_text">Update location</string>
+    <string name="update_location_text_tip">Tip: Set location from your store</string>
+    <string name="change_location">Edit Location</string>
+    <string name="small_ok">Ok</string>
+    <string name="Clear">Clear</string>
+    <string name="update">Update</string>
+    <string name="oops">Oops!</string>
+    <string name="location_store_unavailable">We do not seem to have your store location. Redirecting you to your current location.</string>
+    <string name="processing">Processing</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="choose_different_location">Please set a different location than previous one</string>
+    <string name="success_location_update">Location updated successfully</string>
+
+    <!-- Verification scree -->
+    <string name="verify_key">Verify Key</string>
+    <string name="key_hint">Enter user key</string>
+    <string name="key">User key</string>
+    <string name="store_pin">Store pin:</string>
+    <string name="get_pin">Get pin</string>
+    <string name="enter_user_key">Enter user key</string>
+    <string name="are_you_sure_delete_deal">Are you sure you want to delete this deal?</string>
+    <string name="delete">Delete</string>
+
+    <!-- Change password page -->
+
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="old_password_hint">Enter old password</string>
+    <string name="new_password_hint">Enter new password</string>
+    <string name="confirm_password_hint">Enter confirm password</string>
+    <string name="change_password">Change Password</string>
+    <string name="values_mismatch">Password values must match</string>
+    <string name="invalid_password">Invalid Credentials</string>
+    <string name="settings">Settings</string>
+
+    <!-- Forgot password request -->
+    <string name="forgot_password_request">Forgot Password Request</string>
+    <string name="support">Support</string>
+
+    <!-- Date fundae -->
+    <string name="pick_a_date">Pick a date</string>
+    <string name="opening_time">Opening time</string>
+    <string name="closing_time">Closing time</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="Select_dates">Select Dates</string>
+    <string name="select_time_range">Select time</string>
+    <string name="onwards">onwards</string>
+    <string name="set_end_date">Set end time</string>
+    
+    <string name="invalid_coupons_count">Invalid coupons count</string>
+    <string name="invalid_deal_type">Invalid deal type</string>
+    <string name="invalid_discount_percentage">Invalid discount percentage</string>
+    <string name="invalid_minimum_order">Invalid minimum order</string>
+    <string name="invalid_product_name">Invalid product name</string>
+    
+    <string name="invalid_date">Invalid date</string>
+    <string name="invalid_time">Invalid time</string>
+
+    <string name="deleting_deal_progress">Deleting your deal. Please wait...</string>
+    
+    <string name="select_stores">Select Outlet</string>
+    <string name="enable">Enabled</string>
+    
+    <string name="current_discount">Current Discount</string>
+    <string name="current_crowd">Current crowd</string>
+    <string name="booking">Booking</string>
+
+    
+</resources>

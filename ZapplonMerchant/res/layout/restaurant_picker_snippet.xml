@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/res_snippet_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <com.application.zapplonmerchant.utils.IconView
+        android:id="@+id/restaurant_picker_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|right"
+        android:text="b"
+        android:textColor="@color/zhl_darkest"
+        android:textSize="@dimen/size16" />
+
+    <com.application.zapplonmerchant.utils.IconView
+        android:id="@+id/subscribed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|right"
+        android:text="w"
+        android:textColor="@color/zhl_darkest"
+        android:textSize="@dimen/size15"
+        android:visibility="gone" />
+
+    <com.application.zapplonmerchant.utils.TextViewRegular
+        android:id="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/border_stroke_all_cornered_cyan"
+        android:gravity="center_vertical|right"
+        android:padding="@dimen/size3"
+        android:text="@string/enable"
+        android:textColor="@color/zomato_cyan"
+        android:textSize="@dimen/size14"
+        android:visibility="gone" />
+
+    <com.application.zapplonmerchant.utils.TextViewRegular
+        android:id="@+id/restaurant_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/restaurant_picker_icon"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textColor="@color/zhl_darkest"
+        android:textSize="@dimen/size16" />
+
+    <com.application.zapplonmerchant.utils.TextViewRegular
+        android:id="@+id/restaurant_locality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_toLeftOf="@+id/restaurant_picker_icon"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textColor="@color/zhl_darkest"
+        android:textSize="@dimen/size12" />
+
+</RelativeLayout>

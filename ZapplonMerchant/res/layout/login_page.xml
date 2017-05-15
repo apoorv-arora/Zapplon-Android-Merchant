@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tour_grey"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/tour_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black_trans_twenty" />
+    
+    <RelativeLayout
+        android:id="@+id/page_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height48"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_trans_fifty" >
+
+        <com.application.zapplonmerchant.utils.IconView
+            android:id="@+id/page_header_close"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height48"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="goBack"
+            android:text="I"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size45" />
+
+        <com.application.zapplonmerchant.utils.TextViewBold
+            android:id="@+id/page_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size15" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/page_header"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_trans_forty"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <com.application.zapplonmerchant.utils.TextViewBold
+                    android:id="@+id/merchant_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/size10"
+                    android:gravity="center"
+                    android:padding="@dimen/size15"
+                    android:text="Merchant Login"
+                    android:textColor="@color/zhl"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/size16" />
+
+                <com.application.zapplonmerchant.utils.EditTextRegular
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/merchant_login"
+                    android:layout_margin="@dimen/size10"
+                    android:background="@drawable/edittext_zhl_rounded"
+                    android:hint="@string/email_hint"
+                    android:padding="@dimen/size15"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/zdhl2"
+                    android:textSize="@dimen/size14" />
+
+                <com.application.zapplonmerchant.utils.EditTextRegular
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email"
+                    android:layout_margin="@dimen/size10"
+                    android:background="@drawable/edittext_zhl_rounded"
+                    android:hint="@string/password_hint"
+                    android:imeOptions="actionDone"
+                    android:padding="@dimen/size15"
+                    android:inputType="textPassword"
+                    android:textColor="@color/zdhl2"
+                    android:textSize="@dimen/size14" />
+
+                <com.application.zapplonmerchant.utils.TextViewBold
+                    android:id="@+id/submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/password"
+                    android:layout_margin="@dimen/size20"
+                    android:background="@drawable/black_button_border"
+                    android:gravity="center"
+                    android:padding="@dimen/size15"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size16" />
+
+                <com.application.zapplonmerchant.utils.TextViewBold
+                    android:id="@+id/forgot_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/submit"
+                    android:layout_margin="@dimen/size10"
+                    android:gravity="center"
+                    android:padding="@dimen/size15"
+                    android:text="@string/forgot_password_header"
+                    android:textColor="@color/zhl"
+                    android:textSize="@dimen/size16" />
+
+                <View
+                    android:id="@+id/terms_of_service_separator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight=".1"
+                    android:background="@color/transparent1" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/about_us_terms_conditions_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_trans_fifty"
+                android:orientation="horizontal" >
+
+                <com.application.zapplonmerchant.utils.TextViewBold
+                    android:id="@+id/about_us_terms_conditions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/white_trans_fifty"
+                    android:textSize="@dimen/size11" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

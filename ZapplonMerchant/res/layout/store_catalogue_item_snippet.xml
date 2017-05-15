@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/store_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhl_dark"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/store_item_inner_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.application.zapplonmerchant.utils.IconView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:padding="@dimen/size10"
+            android:text="C"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size45" />
+
+        <com.application.zapplonmerchant.utils.IconView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:padding="@dimen/size10"
+            android:text="E"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size45" />
+
+        <com.application.zapplonmerchant.utils.TextViewSemiBold
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delete"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size18" />
+        
+        <com.application.zapplonmerchant.utils.TextViewSemiBold
+            android:id="@+id/active"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size18" />
+        
+        <com.application.zapplonmerchant.utils.TextViewSemiBold
+            android:id="@+id/type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/active"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size18" />
+
+        <com.application.zapplonmerchant.utils.TextViewSemiBold
+            android:id="@+id/count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size18" />
+
+        <com.application.zapplonmerchant.utils.TextViewSemiBold
+            android:id="@+id/start_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/count"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size18" />
+        
+        <com.application.zapplonmerchant.utils.TextViewSemiBold
+            android:id="@+id/end_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_time"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size18" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

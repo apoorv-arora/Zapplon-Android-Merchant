@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhl"
+    android:orientation="vertical" >
+
+    <com.application.zapplonmerchant.utils.TextViewBold
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/zapplon_button_feedback"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/size10"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size16" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/submit"
+        android:layout_alignParentTop="true"
+        android:background="@color/zhl" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/zhl"
+            android:orientation="vertical" >
+
+            <!-- Deatils input -->
+
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/type_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/deal_type"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.TextViewRegular
+                android:id="@+id/type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type_header"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:background="@drawable/edittext_zhl_rounded"
+                android:gravity="left|center_vertical"
+                android:hint="@string/deal_type_hint"
+                android:padding="@dimen/size10"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size16" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type"
+                android:layout_margin="@dimen/size10"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_flat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/flat_discount" />
+
+                <RadioButton
+                    android:id="@+id/radio_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/amount_discount" />
+            </RadioGroup>
+            
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/product"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radio_group"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/product"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.EditTextRegular
+                android:id="@+id/product_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:background="@drawable/edittext_zhl_rounded"
+                android:gravity="left|center_vertical"
+                android:hint="@string/product_hint"
+                android:padding="@dimen/size10"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/discount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_value"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/discount_food"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.EditTextRegular
+                android:id="@+id/discount_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/discount"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:background="@drawable/edittext_zhl_rounded"
+                android:gravity="left|center_vertical"
+                android:hint="@string/discount_food"
+                android:inputType="number"
+                android:padding="@dimen/size10"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/discount_second"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/discount_value"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/discount_drinks"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.EditTextRegular
+                android:id="@+id/discount_second_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/discount_second"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:background="@drawable/edittext_zhl_rounded"
+                android:gravity="left|center_vertical"
+                android:hint="@string/discount_drinks"
+                android:inputType="number"
+                android:padding="@dimen/size10"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size16" />
+            
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/min_order_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/discount_second_value"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/min_order"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.EditTextRegular
+                android:id="@+id/min_order_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/min_order_header"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:background="@drawable/edittext_zhl_rounded"
+                android:gravity="left|center_vertical"
+                android:hint="@string/min_order_amount"
+                android:inputType="number"
+                android:padding="@dimen/size10"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/max_order_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/min_order_value"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/max_order"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.EditTextRegular
+                android:id="@+id/max_order"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/max_order_header"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:background="@drawable/edittext_zhl_rounded"
+                android:gravity="left|center_vertical"
+                android:hint="@string/max_order_amount"
+                android:inputType="number"
+                android:padding="@dimen/size10"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/coupons_count_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/max_order"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/coupons_count"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.EditTextRegular
+                android:id="@+id/coupons_count"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coupons_count_header"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:background="@drawable/edittext_zhl_rounded"
+                android:gravity="left|center_vertical"
+                android:hint="@string/coupons_count_hint"
+                android:inputType="number"
+                android:padding="@dimen/size10"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size16" />
+            
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/date_picker_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coupons_count"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/Select_dates"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.TextViewRegular
+                android:id="@+id/date_picker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_picker_header"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:background="@drawable/edittext_zhl_rounded"
+                android:gravity="left|center_vertical"
+                android:hint="@string/Select_dates"
+                android:inputType="number"
+                android:padding="@dimen/size10"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size16" />
+            
+            <com.application.zapplonmerchant.utils.TextViewItalics
+                android:id="@+id/time_picker_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_picker"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/size10"
+                android:text="@string/select_time_range"
+                android:textColor="@color/zdhl2"
+                android:textSize="@dimen/size16" />
+
+            <com.application.zapplonmerchant.utils.TextViewRegular
+                android:id="@+id/time_picker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_picker_header"
+                android:layout_marginBottom="@dimen/size20"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:background="@drawable/edittext_zhl_rounded"
+                android:gravity="left|center_vertical"
+                android:hint="@string/select_time_range"
+                android:inputType="number"
+                android:padding="@dimen/size10"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size16" />
+
+            <LinearLayout
+                android:id="@+id/end_time_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_picker"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/height2"
+                    android:gravity="bottom|left"
+                    android:padding="@dimen/size10"
+                    android:text="@string/end_time"
+                    android:textColor="@color/zdhl2"
+                    android:textSize="@dimen/size14"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/end_date_picker"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/zhlbuttonfeedback" >
+
+                    <com.application.zapplonmerchant.utils.IconView
+                        android:id="@+id/end_date_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|right"
+                        android:text="o"
+                        android:textColor="@color/zhl_darkest"
+                        android:textSize="@dimen/size14"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/end_date_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toLeftOf="@+id/end_date_icon"
+                        android:gravity="center_vertical|left"
+                        android:padding="@dimen/size10"
+                        android:text="@string/pick_a_time"
+                        android:textColor="@color/zhl_darkest"
+                        android:textSize="@dimen/size16" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

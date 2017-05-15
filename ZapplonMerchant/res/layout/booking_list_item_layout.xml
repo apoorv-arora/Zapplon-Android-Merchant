@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/store_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhl_dark"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/store_item_inner_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.application.zapplonmerchant.utils.TextViewSemiBold
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size18" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

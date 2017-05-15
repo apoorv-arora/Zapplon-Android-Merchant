@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zhl"
+        android:orientation="vertical" >
+
+        <!-- Name input -->
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/name_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size10"
+            android:text="@string/name"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.EditTextRegular
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_header"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:background="@drawable/edittext_zhl_rounded"
+            android:gravity="left|center_vertical"
+            android:hint="@string/name_hint"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/type_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size10"
+            android:text="@string/type"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewRegular
+            android:id="@+id/type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type_header"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:background="@drawable/edittext_zhl_rounded"
+            android:gravity="left|center_vertical"
+            android:hint="@string/type_hint"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/location_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size10"
+            android:text="@string/location"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_header"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:background="@drawable/edittext_zhl_rounded"
+            android:clickable="true"
+            android:gravity="left|center_vertical"
+            android:hint="@string/mark_location"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/address_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size10"
+            android:text="@string/address"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.EditTextRegular
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_header"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:background="@drawable/edittext_zhl_rounded"
+            android:gravity="left|center_vertical"
+            android:hint="@string/address_hint"
+            android:padding="@dimen/size10"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewItalics
+            android:id="@+id/contact_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size10"
+            android:text="@string/contact"
+            android:textColor="@color/zdhl2"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.EditTextRegular
+            android:id="@+id/contact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_header"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:background="@drawable/edittext_zhl_rounded"
+            android:gravity="left|center_vertical"
+            android:hint="@string/contact_hint"
+            android:padding="@dimen/size10"
+            android:inputType="number"
+            android:textColor="@color/zhl_darkest"
+            android:textSize="@dimen/size16" />
+
+        <com.application.zapplonmerchant.utils.TextViewBold
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size10"
+            android:background="@drawable/green_gradient"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/size10"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16" />
+    </LinearLayout>
+
+</ScrollView>

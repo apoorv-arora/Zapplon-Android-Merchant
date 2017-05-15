@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_fragment_scroll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zhl_dark"
+    android:orientation="vertical" >
+
+    <!-- Name input -->
+
+    <com.application.zapplonmerchant.utils.TextViewItalics
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="center"
+        android:padding="@dimen/size10"
+        android:text="@string/current_discount"
+        android:textColor="@color/zdhl2"
+        android:textSize="@dimen/size16" />
+
+    <com.application.zapplonmerchant.utils.TextViewRegular
+        android:id="@+id/current_Discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="center"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:padding="@dimen/size10"
+        android:singleLine="true"
+        android:textColor="@color/zomato_red_feedback"
+        android:textSize="@dimen/size26" />
+    
+     <com.application.zapplonmerchant.utils.TextViewRegular
+         android:id="@+id/slow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="center"
+        android:padding="@dimen/size10"
+        android:background="@drawable/zapplon_button_feedback"
+        android:text="Slow"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size26" />
+     
+     <com.application.zapplonmerchant.utils.TextViewRegular
+         android:id="@+id/moderate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="center"
+        android:padding="@dimen/size10"
+        android:background="@drawable/blue_button_feedback"
+        android:text="Moderate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size26" />
+     
+     <com.application.zapplonmerchant.utils.TextViewRegular
+         android:id="@+id/fast"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="center"
+        android:padding="@dimen/size10"
+        android:background="@drawable/blue_button_feedback"
+        android:text="Fast"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size26" />
+     
+     <com.application.zapplonmerchant.utils.TextViewRegular
+         android:id="@+id/full"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="center"
+        android:padding="@dimen/size10"
+        android:background="@drawable/blue_button_feedback"
+        android:text="Full"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size26" />
+
+</LinearLayout>

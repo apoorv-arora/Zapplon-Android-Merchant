@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_clear"
+        android:actionLayout="@layout/action_button_clear"
+        android:icon="@drawable/header_refresh"
+        android:showAsAction="always"
+        android:title="Clear"/>
+
+</menu>

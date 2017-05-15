@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhl"
+    android:orientation="vertical" >
+
+    <com.application.zapplonmerchant.utils.TextViewItalics
+        android:id="@+id/key_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/size10"
+        android:text="@string/key"
+        android:textColor="@color/zdhl2"
+        android:textSize="@dimen/size16" />
+
+    <com.application.zapplonmerchant.utils.EditTextRegular
+        android:id="@+id/key"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/key_header"
+        android:layout_marginBottom="@dimen/size10"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:background="@drawable/edittext_zhl_rounded"
+        android:gravity="left|center_vertical"
+        android:hint="@string/key_hint"
+        android:padding="@dimen/size10"
+        android:textColor="@color/zhl_darkest"
+        android:textSize="@dimen/size16" />
+
+    <com.application.zapplonmerchant.utils.TextViewBold
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/key"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/green_gradient"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/size10"
+        android:text="@string/get_pin"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="@dimen/size16" />
+
+    <com.application.zapplonmerchant.utils.TextViewItalics
+        android:id="@+id/pin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/size10"
+        android:text="@string/store_pin"
+        android:textColor="@color/zdhl2"
+        android:textSize="@dimen/size16"
+        android:visibility="gone" />
+
+</RelativeLayout>

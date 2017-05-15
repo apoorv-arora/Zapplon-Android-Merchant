@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/drawer_user_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height150"
+            android:background="@drawable/zhl_dark_feedback"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:foreground="@drawable/photo_feedback" >
+
+                <ImageView
+                    android:id="@+id/drawer_user_info_blur_background_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <com.application.zapplonmerchant.utils.ZCircularImageView
+                android:id="@+id/drawer_user_info_background_image"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY" />
+
+            <View
+                android:id="@+id/drawer_user_info_background_image_overlay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_trans_twenty" />
+
+            <View
+                android:id="@+id/drawer_user_gradient_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/drawer_gradient_bottom" />
+
+            <RelativeLayout
+                android:id="@+id/drawer_user_stat_cont"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/height10"
+                android:padding="@dimen/size10"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <com.application.zapplonmerchant.utils.IconView
+                    android:id="@+id/drawer_user_stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size10"
+                    android:text="N"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size45" />
+
+                <com.application.zapplonmerchant.utils.TextViewBold
+                    android:id="@+id/drawer_user_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/drawer_user_stats"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size16" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height=".5dp"
+            android:background="@color/color_separator_color_dark" />
+
+        <RelativeLayout
+            android:id="@+id/rate"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/minimum_clickable_area"
+            android:background="@drawable/whitebuttoncustomback"
+            android:onClick="rate"
+            android:paddingRight="@dimen/toolbar_padding" >
+
+            <com.application.zapplonmerchant.utils.IconView
+                android:id="@+id/rate_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_icon_left_padding"
+                android:text="P"
+                android:textColor="@color/zdark"
+                android:textSize="@dimen/drawer_icon_size" />
+
+            <com.application.zapplonmerchant.utils.TextViewSemiBold
+                android:id="@+id/rate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_text_left_padding"
+                android:text="@string/rate_app"
+                android:textAllCaps="true"
+                android:textColor="@color/zdark"
+                android:textSize="@dimen/drawer_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height=".5dp"
+            android:background="@color/light_stroke_color" />
+
+        <RelativeLayout
+            android:id="@+id/verify"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/minimum_clickable_area"
+            android:background="@drawable/whitebuttoncustomback"
+            android:onClick="verify"
+            android:paddingRight="@dimen/toolbar_padding" >
+
+            <com.application.zapplonmerchant.utils.IconView
+                android:id="@+id/verify_deal_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_icon_left_padding"
+                android:text="Q"
+                android:textColor="@color/zdark"
+                android:textSize="@dimen/drawer_icon_size" />
+
+            <com.application.zapplonmerchant.utils.TextViewSemiBold
+                android:id="@+id/verify_deal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_text_left_padding"
+                android:text="@string/verify_deal"
+                android:textAllCaps="true"
+                android:textColor="@color/zdark"
+                android:textSize="@dimen/drawer_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height=".5dp"
+            android:background="@color/light_stroke_color" />
+
+        <RelativeLayout
+            android:id="@+id/feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/minimum_clickable_area_small"
+            android:background="@drawable/whitebuttoncustomback"
+            android:onClick="feedback"
+            android:paddingRight="@dimen/toolbar_padding" >
+
+            <com.application.zapplonmerchant.utils.IconView
+                android:id="@+id/feedback_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_icon_left_padding"
+                android:text="T"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_icon_size" />
+
+            <com.application.zapplonmerchant.utils.TextViewSemiBold
+                android:id="@+id/feedback_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_text_left_padding"
+                android:text="@string/feedback"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/support"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/minimum_clickable_area_small"
+            android:background="@drawable/whitebuttoncustomback"
+            android:clickable="true"
+            android:onClick="support"
+            android:paddingRight="@dimen/toolbar_padding"
+            android:visibility="gone" >
+
+            <com.application.zapplonmerchant.utils.IconView
+                android:id="@+id/support_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_icon_left_padding"
+                android:text="S"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_icon_size" />
+
+            <com.application.zapplonmerchant.utils.TextViewSemiBold
+                android:id="@+id/support_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_text_left_padding"
+                android:text="@string/support"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aboutus"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/minimum_clickable_area_small"
+            android:background="@drawable/whitebuttoncustomback"
+            android:clickable="true"
+            android:onClick="aboutus"
+            android:paddingRight="@dimen/toolbar_padding" >
+
+            <com.application.zapplonmerchant.utils.IconView
+                android:id="@+id/aboutus_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_icon_left_padding"
+                android:text="g"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_icon_size" />
+
+            <com.application.zapplonmerchant.utils.TextViewSemiBold
+                android:id="@+id/aboutus_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_text_left_padding"
+                android:text="@string/about_us"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/passwordChange"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/minimum_clickable_area_small"
+            android:background="@drawable/whitebuttoncustomback"
+            android:onClick="passwordChange"
+            android:paddingRight="@dimen/toolbar_padding" >
+
+            <com.application.zapplonmerchant.utils.IconView
+                android:id="@+id/passwordChange_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_icon_left_padding"
+                android:text="U"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_icon_size" />
+
+            <com.application.zapplonmerchant.utils.TextViewSemiBold
+                android:id="@+id/passwordChange_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_text_left_padding"
+                android:text="@string/change_password"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/minimum_clickable_area_small"
+            android:background="@drawable/whitebuttoncustomback"
+            android:onClick="settings"
+            android:paddingRight="@dimen/toolbar_padding" >
+
+            <com.application.zapplonmerchant.utils.IconView
+                android:id="@+id/settings_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_icon_left_padding"
+                android:text="e"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_icon_size" />
+
+            <com.application.zapplonmerchant.utils.TextViewSemiBold
+                android:id="@+id/settings_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_text_left_padding"
+                android:text="@string/settings"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_text_size" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/logout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/minimum_clickable_area_small"
+            android:background="@drawable/whitebuttoncustomback"
+            android:onClick="logoutConfirm"
+            android:paddingRight="@dimen/toolbar_padding" >
+
+            <com.application.zapplonmerchant.utils.IconView
+                android:id="@+id/logout_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_icon_left_padding"
+                android:text="V"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_icon_size" />
+
+            <com.application.zapplonmerchant.utils.TextViewSemiBold
+                android:id="@+id/logout_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/drawer_text_left_padding"
+                android:text="@string/logout"
+                android:textColor="@color/drawer_lighter"
+                android:textSize="@dimen/drawer_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

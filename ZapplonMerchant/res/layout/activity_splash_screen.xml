@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black_trans_twenty" />
+
+    <RelativeLayout
+        android:id="@+id/main_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tour_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/tour_dots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/signup_container"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@id/signup_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/size15"
+            android:background="@drawable/transblackfeedback"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/size10"
+            android:visibility="visible" >
+
+            <com.application.zapplonmerchant.utils.TextViewBold
+                android:id="@+id/merchant_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:padding="@dimen/size10"
+                android:text="@string/login"
+                android:textColor="@color/zhl"
+                android:textSize="@dimen/size16" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/main_login_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/login_page"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" />
+
+    <LinearLayout
+        android:id="@+id/customDialogContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/markerImg"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/customDialogTextContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dialogDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left|center_vertical"
+                android:text="@string/update_location_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size15" />
+
+            <TextView
+                android:id="@+id/dialogTipDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left|center_vertical"
+                android:text="@string/update_location_text_tip"
+                android:textColor="@color/zhl_darkest"
+                android:textSize="@dimen/size11" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialogCloseTv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="@string/small_ok"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size19" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/markerImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mapmarker" />
+
+</RelativeLayout>
